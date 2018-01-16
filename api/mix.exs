@@ -20,7 +20,7 @@ defmodule Sling.Mixfile do
   def application do
     [
       mod: {Sling, []},
-      extra_applications: [:logger, :comeonin, :guardian]
+      extra_applications: [:logger, :comeonin, :guardian, :scrivener_ecto]
     ]
   end
 
@@ -42,7 +42,8 @@ defmodule Sling.Mixfile do
       {:comeonin, "~> 2.5"},
       {:cors_plug, "~> 1.1"},
       {:corsica, "~> 1.0"},
-      {:guardian, "~> 0.14.0"}
+      {:guardian, "~> 0.14.0"},
+      {:scrivener_ecto, "~> 1.0"}
     ]
   end
 
